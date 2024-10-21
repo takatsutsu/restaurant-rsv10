@@ -319,3 +319,4 @@ DB_PASSWORD=laravel_pass
    ②Logout  
    ③MyPage (一般会員マイページ)
 # restaurant-rsv1
+# restaurant-rsv1
