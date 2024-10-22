@@ -92,7 +92,7 @@ https://github.com/takatsutsu/restaurant-rsv1.git
 
 - `$ cd coachtech/laravel`  
    ※coachtech/laravel は環境によって異なる。
-- `$ git clone https://github.com/takatsutsu/restaurant-rsv1.git [restaurant-rsv1]`  
+- `$ git clone https://github.com/takatsutsu/restaurant-rsv1-new.git [restaurant-rsv1]`  
    ※[restaurant-rsv1]は任意のフォルダ
 
 **開発の履歴を残すために、個人個人のリモートリポジトリの url を変更。**
