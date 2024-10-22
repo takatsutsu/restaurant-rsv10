@@ -51,11 +51,7 @@ class RegisterController extends Controller
         'role' => 'shop-admin',
         ]);
 
-        Auth::login($user);
-
-        event(new Registered($user));
-
-        return redirect()->route('registration.success');
+        return redirect('/')->with('message', '店舗管理者が登録されました。');
 
     }
 
