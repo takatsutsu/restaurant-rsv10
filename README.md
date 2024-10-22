@@ -218,13 +218,16 @@ DB_PASSWORD=laravel_pass
   - また、店舗管理者は、すでに登録してある店舗情報を更新することができる。
   - 店舗管理者で、ログイン後、左上のメニュー「ShopContents-Edit」から店舗情報を編集更新ができる。
 
-- ストレージ
+- ストレージに画像を保存
 
   - 保存場所:①[restaurant-rsv1]/src/storage/app/public/
   - 表示用:②[restaurant-rsv1]/src/public
 
-    ※② から ① にシンボリックを張っている。  
-    環境構築の際には、レストラン画像を[restaurant-rsv1]/src/storage/app/public/にコピー
+    ※② から ① にシンボリックリンクを張っている。  
+    画像が表示されなければ、以下を実行しシンボリックリンクを貼り直す
+
+    - `$ docker-compose exec php bash`
+    - `$ php artisan storage:link`
 
 - 認証  
    一般会員。店舗管理者会員についてはアカウントを登録すると、メール認証が送信され、メールで認証することによって、使用することができるようになる。  
@@ -318,5 +321,7 @@ DB_PASSWORD=laravel_pass
    ①Home  
    ②Logout  
    ③MyPage (一般会員マイページ)
+
 # restaurant-rsv1
+
 # restaurant-rsv1

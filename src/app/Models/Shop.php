@@ -27,12 +27,12 @@ class Shop extends Model
         return $this->belongsTo("App\Models\Genre");
     }
 
-    public function reservation()
+    public function reservations()
     {
         return $this->hasMany("App\Models\Reservation");
     }
 
-    public function favorite()
+    public function favorites()
     {
         return $this->hasMany("App\Models\Favorite");
     }

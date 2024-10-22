@@ -48,12 +48,12 @@ class User extends Authenticatable implements MustVerifyEmail
         'email_verified_at' => 'datetime',
     ];
 
-    public function reservation()
+    public function reservations()
     {
         return $this->hasMany("App\Models\Reservation");
     }
 
-    public function favorite()
+    public function favorites()
     {
         return $this->hasMany("App\Models\Favorite");
     }

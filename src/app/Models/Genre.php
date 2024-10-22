@@ -15,7 +15,7 @@ class Genre extends Model
         'genre_picture',
     ];
 
-    public function shop()
+    public function shops()
     {
         return $this->hasMany("App\Models\Shop");
     }
